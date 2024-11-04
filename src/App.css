@@ -1,36 +1,244 @@
-.App {
-  text-align: center;
+body {
+  background-color: #000000; /* Dark background */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Consistent font */
 }
 
 .tier-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .tier-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  width: 100%; /* Full width */
 }
 
+.tier-label {
+  width: 120px; /* Fixed width */
+  height: 90px; /* Fixed height */
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  padding: 15px;
+  border: 3px solid #000;
+  color: #000000;
+  display: flex;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+.title {
+  color: #f0f0f0; /* White or soft color for visibility */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 4rem; /* 100% bigger (adjust as needed) */
+}
 .tier-content {
   flex: 1;
-  border: 2px solid #000;
+  display: flex;
+  gap: 8px;
+  min-height: 120px;
+  background-color: #333;
+  border: 3px solid #000;
+}
+
+.tier-label.s { background-color: red; }
+.tier-label.a { background-color: orange; }
+.tier-label.b { background-color: yellow; }
+.tier-label.c { background-color: green; }
+.tier-label.d { background-color: blue; }
+.tier-label.e { background-color: purple; }
+.tier-label.f { background-color: pink; }
+
+.event-card {
+  background-color: #c8d0d3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   padding: 10px;
-  min-height: 50px;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px; /* Adjust as needed */
+}
+
+.event-card.selected {
+  border: 2px solid blue; /* Highlight selected event */
+  background-color: #e0e0ff; /* Slight background change */
+}
+
+
+.event-input {
+  width: 90%; /* Adjust to fit the event card */
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 24px; /* Increase the font size */
+  padding: 15px 30px; /* Increase the padding */
+  background-color: #4CAF50; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  margin-bottom: 20px; /* Space below the button */
+  transition: background-color 0.3s; /* Smooth hover effect */
+  margin-right: 50px; /* Adjust the spacing */
+}
+
+button:hover {
+  background-color: #45a049; /* Hover color */
+}
+
+.new-events-section {
+  margin-top: 20px;
+  border: 2px solid #616060;
+  padding: 15px;
+  background-color: #3f3f3f;
+  border-radius: 10px;
+  width: 100%; /* Ensure full width */
+  max-width: none; /* Remove max-width limit */
+}
+
+.new-events-content {
+  display: flex;
+  gap: 10px;
+  min-height: 100px;
+  justify-content: flex-start; /* Align items to the left */
+}
+
+.user-menu {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+  z-index: 1;
+  width: 200px; /* Adjust width */
+}
+
+.user-option {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Larger font size */
+}
+
+.user-option:hover {
   background-color: #f0f0f0;
 }
-.event-card {
-  padding: 10px;
+
+.new-user-form {
+  margin-top: 10px;
+}
+
+.new-user-form input {
+  display: block;
   margin-bottom: 5px;
-  background-color: #d3d3d3;
+  padding: 5px;
+}
+
+.new-user-form button {
+  padding: 5px 10px;
+}
+.user-menu {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+  z-index: 1;
+  width: 200px; /* Adjust width as needed */
+  max-height: 200px; /* Add max-height for scrolling */
+  overflow-y: auto; /* Enable scrolling */
+}
+
+.user-option {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Increase font size */
+}
+
+.user-option:hover {
+  background-color: #f0f0f0;
+}
+
+.new-user-form {
+  margin-top: 10px;
+}
+
+.new-user-form input {
+  display: block;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.new-user-form button {
+  padding: 5px 10px;
+}
+
+.password-prompt {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.password-input {
+  padding: 5px;
+  margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  cursor: grab;
+}
+.body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.event-card:active {
-  cursor: grabbing;
+.title {
+  color: #f0f0f0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 4rem;
 }
 
+.button-container.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-menu-container {
+  display: inline-block;
+  position: relative;
+}
+
+.user-menu {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 5px;
+  z-index: 1;
+  width: 150px;
+}
+
+.user-option {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.user-option:hover {
+  background-color: #f0f0f0;
+}
