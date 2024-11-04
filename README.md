@@ -62,23 +62,40 @@ Note: This is a one-way operation. Once ejected, you can't go back.
 Copies configuration files and dependencies into your project for customization.
 
 **Project Structure**
+
 plaintext
+
 Copy code
+
 tier-list-app/
 │
+
 ├── public/            # Public assets
+
 ├── src/
+
 │   ├── components/    # Reusable components (e.g., UserMenu, UserTier)
+
 │   ├── App.js         # Main app component
+
 │   ├── User.js        # User selection and menu handling
+
 │   ├── UserTier.js    # User tier display and management
+
 │   ├── index.js       # Entry point
+
 │   └── App.css        # Main CSS file
+
 │
+
 ├── .gitignore         # Git ignore file
+
 ├── README.md          # Project documentation
+
 ├── package.json       # Project metadata and dependencies
+
 └── package-lock.json  # Auto-generated lock file
+
 **Usage**
 User Selection: Click the "User" button and select a user or create a new user.
 Password Protection: Enter the 4-digit password to unlock editing functionalities.
