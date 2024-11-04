@@ -1,4 +1,5 @@
 **Tier List App**
+
 A dynamic React application for managing tier lists, allowing users to categorize events and move them between tiers with user authentication.
 
 **Table of Contents**
