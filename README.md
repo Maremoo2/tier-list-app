@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+**Tier List App
+A dynamic React application for managing tier lists, allowing users to categorize events and move them between tiers with user authentication.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Getting Started
+Features
+Installation
+Available Scripts
+Project Structure
+Usage
+Technologies Used
+Contributing
+License
+Getting Started
+This project was bootstrapped with Create React App. The goal is to create a user-interactive tier list that supports adding, editing, and categorizing events. It includes user authentication and password protection for specific functionalities.
 
-## Available Scripts
+Features
+User authentication with simple password protection.
+Ability to add new events and place them in different tiers.
+Users can select, move, and edit event tags.
+User-specific tier lists for customized data management.
+Installation
+To get a local copy of the project up and running, follow these steps:
 
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/tier-list-app.git
+cd tier-list-app
+Install dependencies:
+
+bash
+Copy code
+npm install
+Start the development server:
+
+bash
+Copy code
+npm start
+Open your browser: Navigate to http://localhost:3000 to view the app.
+
+Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+npm start
+Runs the app in development mode.
+The app will open at http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm test
+Launches the test runner in interactive watch mode.
+Learn more about running tests.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm run build
+Builds the app for production and optimizes the build for the best performance.
+The production build is located in the build/ folder.
 
-### `npm test`
+npm run eject
+Note: This is a one-way operation. Once ejected, you can't go back.
+Copies configuration files and dependencies into your project for customization.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project Structure
+plaintext
+Copy code
+tier-list-app/
+│
+├── public/            # Public assets
+├── src/
+│   ├── components/    # Reusable components (e.g., UserMenu, UserTier)
+│   ├── App.js         # Main app component
+│   ├── User.js        # User selection and menu handling
+│   ├── UserTier.js    # User tier display and management
+│   ├── index.js       # Entry point
+│   └── App.css        # Main CSS file
+│
+├── .gitignore         # Git ignore file
+├── README.md          # Project documentation
+├── package.json       # Project metadata and dependencies
+└── package-lock.json  # Auto-generated lock file
+Usage
+User Selection: Click the "User" button and select a user or create a new user.
+Password Protection: Enter the 4-digit password to unlock editing functionalities.
+Adding Events: Use the "+ New Event" button to add new event cards to the "New Events" section.
+Managing Tiers: Click on an event to select it, then click on a tier to move it.
+Editing Events: Double-click on an event card to edit its name.
+Technologies Used
+React: A JavaScript library for building user interfaces.
+CSS: Styling for the application.
+JavaScript (ES6+): Core language for building the application.
+Contributing
+Contributions are welcome! Follow these steps to contribute:
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/YourFeature).
+Open a pull request.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
